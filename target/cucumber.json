@@ -1,0 +1,64 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Search for a product",
+        "description": "",
+        "id": "search;search-for-a-product",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 21607321900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on homepage",
+            "match": {
+              "location": "SearchSteps.i_am_on_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5377978000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I search for a \"Nike\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Nike",
+                  "offset": 16
+                }
+              ],
+              "location": "SearchSteps.i_search_for_a(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 181020400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should be able see desire product",
+            "match": {
+              "location": "SearchSteps.i_should_be_able_see_desire_product()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search",
+    "description": "As end user\r\nI want to search\r\nSo that I can see desire product",
+    "id": "search",
+    "keyword": "Feature",
+    "uri": "src/test/resources/search.feature"
+  }
+]
